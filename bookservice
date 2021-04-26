@@ -163,7 +163,7 @@
         can be accessed from - in other words, its endpoint.
      -->
     <wsdl:service name="BookService">
-      <wsdl:documentation>My first service</wsdl:documentation>
+        <wsdl:documentation>My first service</wsdl:documentation>
         <wsdl:port binding="tns:BookServiceSOAP" name="BookServiceSOAP">
             <soap:address location="http://www.example.org/BookService" />
         </wsdl:port>
