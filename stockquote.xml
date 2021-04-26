@@ -63,6 +63,10 @@
     <port name="StockQuotePort" binding="tns:StockQuoteBinding">
       <soap:address location="http://example.com/stockquote"/>
     </port>
+  </service>
+
+  <service name="StockQuoteService2">
+    <documentation>My first service</documentation>
     <port name="StockQuotePort1" binding="tns:StockQuoteBinding">
       <soap:address location="http://example.com/stockquote"/>
     </port>
