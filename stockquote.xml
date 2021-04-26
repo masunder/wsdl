@@ -6,6 +6,9 @@
              xmlns:xsd1="http://example.com/stockquote.xsd"
              xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
              xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <documentation>Definition for a web service called BookService,
+      which can be used to add or retrieve books from a collection.
+  </documentation>
 
   <types>
     <schema targetNamespace="http://example.com/stockquote.xsd"
