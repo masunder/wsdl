@@ -23,7 +23,9 @@
       <element name="TradePrice">
         <complexType>
           <all>
-            <element name="price" type="float"/>
+            <element name="price" type="float">              
+              <documentation>tHIS I A PRICE DESCRIPTION</documentation>
+            </element>
           </all>
         </complexType>
       </element>
