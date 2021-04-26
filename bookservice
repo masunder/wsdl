@@ -16,9 +16,7 @@
             <xsd:element name="Book">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name="ID" type="xsd:string" minOccurs="0">
-                          <wsdl:documentation>This is a ID</wsdl:documentation>
-                        </xsd:element>
+                        <xsd:element name="ID" type="xsd:string" minOccurs="0" documentation="Tgis is a id"/>
                         <xsd:element name="Title" type="xsd:string"/>
                         <xsd:element name="Author" type="xsd:string"/>
                     </xsd:sequence>
