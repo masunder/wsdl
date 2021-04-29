@@ -36,6 +36,7 @@
 
   <portType name="StockQuotePortType">
     <operation name="GetLastTradePrice">
+      <documentation>This operation GetLastTradePrice of the StockQuotePortType is doing some crazy stuf. </documentation>
       <input message="tns:GetLastTradePriceInput"/>
       <output message="tns:GetLastTradePriceOutput"/>
     </operation>
