@@ -10,6 +10,9 @@
   </wsdl:documentation>
 
   <wsdl:types>
+    <wsdl:documentation>
+      Types documentation text
+    </wsdl:documentation>
     <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
       targetNamespace="http://www.herongyang.com/Service/">
       <xsd:element name="Hello" type="xsd:string"/>
@@ -18,10 +21,24 @@
   </wsdl:types>
 
   <wsdl:interface name="helloInterface">
+    <wsdl:documentation>
+      interface documentation text
+    </wsdl:documentation>
     <wsdl:operation name="Hello"
       pattern="http://www.w3.org/ns/wsdl/in-out">
-      <wsdl:input messageLabel="In" element="hy:Hello"/>
-      <wsdl:output messageLabel="Out" element="hy:HelloResponse"/>
+      <wsdl:documentation>
+        interface operation documentation text
+      </wsdl:documentation>
+      <wsdl:input messageLabel="In" element="hy:Hello">        
+        <wsdl:documentation>
+          interface operation input documentation text
+        </wsdl:documentation>
+      </wsdl:input>
+      <wsdl:output messageLabel="Out" element="hy:HelloResponse">        
+        <wsdl:documentation>
+          interface operation output documentation text
+        </wsdl:documentation>
+      </wsdl:output>
     </wsdl:operation>
   </wsdl:interface>
 
@@ -29,15 +46,29 @@
     interface="hy:helloInterface"
     type="http://www.w3.org/ns/wsdl/soap"
     wsoap:protocol="http://www.w3.org/2003/05/soap/bindings/HTTP/">
+    <wsdl:documentation>
+      binding documentation text
+    </wsdl:documentation>
     <wsdl:operation ref="hy:Hello"
-      wsoap:mep="http://www.w3.org/2003/05/soap/mep/soap-response"/>
+      wsoap:mep="http://www.w3.org/2003/05/soap/mep/soap-response">
+      <wsdl:documentation>
+        binding operation documentation text
+      </wsdl:documentation>
+    </wsdl:operation>
   </wsdl:binding>
 
   <wsdl:service name="helloService"
     interface="hy:helloInterface">
+    <wsdl:documentation>
+      service documentation text
+    </wsdl:documentation>
     <wsdl:endpoint name="helloEndpoint"
       binding="hy:helloBinding"
-      address="http://www.herongyang.com/Service/Hello_SOAP_12.php"/>
+      address="http://www.herongyang.com/Service/Hello_SOAP_12.php">
+      <wsdl:documentation>
+        service endpoint documentation text
+      </wsdl:documentation>
+    </wsdl:endpoint>
   </wsdl:service>
 
 </wsdl:description>
